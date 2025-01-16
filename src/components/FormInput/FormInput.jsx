@@ -18,10 +18,10 @@ function FormInput() {
     };
 
     return (
-        <div className="form">
+        <div className="form-block">
             <form className="form-input" onSubmit={handleSubmit}>
                 <Input
-                    type={"text"}
+                    type={"search"}
                     value={inputData}
                     onChange={handleChange}
                     placeholder={"Введите название"}
