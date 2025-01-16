@@ -1,7 +1,8 @@
 import Button from "../Button/Button";
-import Input from "../Input/Input";
+// import Input from "../Input/Input";
 import "./FormInput.css";
 import { useState } from "react";
+import InputWithLogo from "../InputWithLogo/InputWithLogo";
 
 function FormInput() {
     const [inputData, setInputData] = useState("");
@@ -18,9 +19,9 @@ function FormInput() {
     };
 
     return (
-        <div className="form-block">
-            <form className="form-input" onSubmit={handleSubmit}>
-                <Input
+        <form className="form-input" onSubmit={handleSubmit}>
+            <div className="form-block">
+                <InputWithLogo
                     type={"search"}
                     value={inputData}
                     onChange={handleChange}
@@ -32,8 +33,8 @@ function FormInput() {
                         console.log("Нажали");
                     }}
                 />
-            </form>
-        </div>
+            </div>
+        </form>
     );
 }
 
