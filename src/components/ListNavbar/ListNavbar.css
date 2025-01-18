@@ -1,0 +1,22 @@
+.navbar {
+    display: flex;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.search-films {
+    padding: 16px;
+}
+
+.my-films {
+    padding: 16px;
+}
+
+.enter {
+    padding: 16px;
+}
