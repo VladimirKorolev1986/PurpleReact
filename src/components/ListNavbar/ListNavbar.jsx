@@ -25,6 +25,7 @@ function ListNavbar() {
             </div>
             <div className="enter">
                 <a href="#">Войти</a>
+                <img src="/public/Broken/Arrows Action/Login 3.svg" alt="" />
             </div>
         </div>
     );

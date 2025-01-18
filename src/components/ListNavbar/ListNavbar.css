@@ -18,5 +18,7 @@ a {
 }
 
 .enter {
+    display: flex;
     padding: 16px;
+    gap: 8px;
 }
