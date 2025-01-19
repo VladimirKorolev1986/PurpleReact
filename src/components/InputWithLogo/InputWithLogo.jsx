@@ -1,14 +1,16 @@
 import "./InputWithLogo.css";
 import Input from "../Input/Input";
 
-const InputWithLogo = (props) => {
+const InputWithLogo = ({ showLogo = true, ...props }) => {
     return (
         <div className="input-search">
-            <img
-                className="icon-search"
-                src="/search-normal.svg"
-                alt="Search icon"
-            />
+            {showLogo && (
+                <img
+                    className="icon-search"
+                    src="/search-normal.svg"
+                    alt="Search icon"
+                />
+            )}
             <Input {...props} />
         </div>
     );

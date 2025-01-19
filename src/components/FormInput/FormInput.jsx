@@ -22,6 +22,7 @@ function FormInput() {
         <form className="form-input" onSubmit={handleSubmit}>
             <div className="form-block">
                 <InputWithLogo
+                    showLogo={true}
                     type={"search"}
                     value={inputData}
                     onChange={handleChange}

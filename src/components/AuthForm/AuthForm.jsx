@@ -1,6 +1,7 @@
 import "./AuthForm.css";
 import { useState } from "react";
 import Button from "../Button/Button";
+import InputWithLogo from "../InputWithLogo/InputWithLogo";
 
 function AuthForm() {
     const [data, setData] = useState("");
@@ -13,13 +14,12 @@ function AuthForm() {
     };
     return (
         <form className="form-auth" onSubmit={HandleSubmit}>
-            <input
-                className="input-auth"
-                name="login"
-                type="text"
+            <InputWithLogo
+                type={"search"}
                 value={data}
                 onChange={inputChange}
                 placeholder={"Ваше имя"}
+                showLogo={false}
             />
             <Button
                 className="button-auth"
