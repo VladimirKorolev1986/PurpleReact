@@ -6,6 +6,7 @@ import FormInput from "./components/FormInput/FormInput";
 import ListNavbar from "./components/ListNavbar/ListNavbar";
 import Header from "./layouts/Header/Header";
 import Img from "./components/Img/Img";
+import AuthForm from "./components/AuthForm/AuthForm";
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
                 fontSize={20}
             ></Paragraph>
             <FormInput></FormInput>
+            <AuthForm />
         </>
     );
 }
