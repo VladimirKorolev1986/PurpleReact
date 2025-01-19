@@ -17,13 +17,13 @@ function ListNavbar() {
 
     return (
         <div className="navbar">
-            <div className="search-films">
+            <div className="nav-item">
                 <a href="#">Поиск фильмов</a>
             </div>
-            <div className="my-films">
+            <div className="nav-item">
                 <a href="#">Мои фильмы</a>
             </div>
-            <div className="enter">
+            <div className="nav-item enter">
                 <a href="#">Войти</a>
                 <img src="/public/Broken/Arrows Action/Login 3.svg" alt="" />
             </div>

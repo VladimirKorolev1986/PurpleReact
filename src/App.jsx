@@ -5,11 +5,13 @@ import Paragraph from "./components/Paragraph/Paragraph";
 import FormInput from "./components/FormInput/FormInput";
 import ListNavbar from "./components/ListNavbar/ListNavbar";
 import Header from "./layouts/Header/Header";
+import Img from "./components/Img/Img";
 
 function App() {
     return (
         <>
             <Header>
+                <Img />
                 <ListNavbar />
             </Header>
             <Heading text="Поиск"></Heading>
