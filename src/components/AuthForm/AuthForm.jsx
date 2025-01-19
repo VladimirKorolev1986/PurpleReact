@@ -11,6 +11,9 @@ function AuthForm() {
 
     const HandleSubmit = (e) => {
         e.preventDefault();
+        const formData = new FormData(e.target);
+        const formProps = Object.fromEntries(formData);
+        console.log(formProps);
     };
     return (
         <form className="form-auth" onSubmit={HandleSubmit}>
@@ -20,6 +23,7 @@ function AuthForm() {
                 onChange={inputChange}
                 placeholder={"Ваше имя"}
                 showLogo={false}
+                name="username"
             />
             <Button
                 className="button-auth"

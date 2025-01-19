@@ -14,7 +14,7 @@ function FormInput() {
     const handleSubmit = (e) => {
         e.preventDefault();
         const formData = new FormData(e.target);
-        const formProps = formData.fromEntries(formData);
+        const formProps = Object.fromEntries(formData);
         console.log(formProps);
     };
 
@@ -27,13 +27,9 @@ function FormInput() {
                     value={inputData}
                     onChange={handleChange}
                     placeholder={"Введите название"}
+                    name="title"
                 />
-                <Button
-                    text={"Сохранить"}
-                    onClick={() => {
-                        console.log("Нажали");
-                    }}
-                />
+                <Button text={"Сохранить"} type="submit" />
             </div>
         </form>
     );
