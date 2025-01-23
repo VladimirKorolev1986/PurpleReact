@@ -7,14 +7,23 @@ import ListNavbar from "./components/ListNavbar/ListNavbar";
 import Header from "./layouts/Header/Header";
 import Img from "./components/Img/Img";
 import AuthForm from "./components/AuthForm/AuthForm";
+import MovieCard from "./components/MovieCard/MovieCard";
+
+// const INITIAL_DATA = [];
 
 function App() {
+    const card = {
+        img: "https://via.placeholder.com/200x300",
+        title: "inception",
+        rating: 8.8,
+    };
     return (
         <>
             <Header>
                 <Img />
                 <ListNavbar />
             </Header>
+            <MovieCard card={card} />
             <Heading text="Поиск"></Heading>
             <Button name={"Искать"} />
             <Paragraph
