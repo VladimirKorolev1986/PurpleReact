@@ -13,9 +13,9 @@ import MovieCard from "./components/MovieCard/MovieCard";
 
 function App() {
     const card = {
-        img: "https://via.placeholder.com/200x300",
-        title: "inception",
-        rating: 8.8,
+        img: "public/cards/black-widow.png",
+        title: "Black Widow",
+        rating: 324,
     };
     return (
         <>
@@ -23,7 +23,9 @@ function App() {
                 <Img />
                 <ListNavbar />
             </Header>
+
             <MovieCard card={card} />
+
             <Heading text="Поиск"></Heading>
             <Button name={"Искать"} />
             <Paragraph
