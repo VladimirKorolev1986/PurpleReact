@@ -6,7 +6,7 @@ import FormInput from "./components/FormInput/FormInput";
 import ListNavbar from "./components/ListNavbar/ListNavbar";
 import Header from "./layouts/Header/Header";
 import Img from "./components/Img/Img";
-import AuthForm from "./components/AuthForm/AuthForm";
+// import AuthForm from "./components/AuthForm/AuthForm";
 // import MovieCard from "./components/MovieCard/MovieCard";
 import ListCards from "./components/ListCards/ListCards";
 
@@ -19,21 +19,21 @@ function App() {
             </Header>
             <div className="frame3">
                 <Heading text="Поиск"></Heading>
+
                 <Paragraph
                     text="Введите название фильма, сериала или мультфильма для поиска и добавления в избранное."
                     fontSize={16}
                 ></Paragraph>
+                <FormInput></FormInput>
+                <ListCards />
             </div>
 
-            <FormInput></FormInput>
-            <ListCards />
-
-            <Paragraph
+            {/* <Paragraph
                 text="Введите название фильма, сериала или мультфильма для поиска и добавления в избранное."
                 fontSize={20}
-            ></Paragraph>
+            ></Paragraph> */}
 
-            <AuthForm />
+            {/* <AuthForm /> */}
         </>
     );
 }
