@@ -6,6 +6,7 @@
     border-radius: 12px;
     width: 384px;
     height: 64px;
+    gap: 16px;
 }
 
 .icon-search {

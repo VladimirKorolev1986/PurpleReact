@@ -29,7 +29,7 @@ function FormInput() {
                     placeholder={"Введите название"}
                     name="title"
                 />
-                <Button text={"Сохранить"} type="submit" />
+                <Button text={"Искать"} type="submit" />
             </div>
         </form>
     );

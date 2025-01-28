@@ -9,3 +9,14 @@ body {
     padding: 0 120px 0 120px;
     background: #121829;
 }
+
+.frame3 {
+    display: flex;
+    width: 588px;
+    height: 144px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+}
