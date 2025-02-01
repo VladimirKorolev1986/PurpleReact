@@ -1,0 +1,20 @@
+.navbar {
+    display: flex;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav-item {
+    padding: 16px 12px;
+}
+
+.enter {
+    display: flex;
+    gap: 8px;
+}

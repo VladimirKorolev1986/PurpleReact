@@ -1,0 +1,16 @@
+.input-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #323b54;
+    border-radius: 12px;
+    width: 384px;
+    height: 64px;
+    gap: 16px;
+}
+
+.icon-search {
+    display: block;
+    height: 24px;
+    width: 24px;
+}

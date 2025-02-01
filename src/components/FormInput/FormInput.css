@@ -1,0 +1,9 @@
+.form-input {
+    margin-bottom: 85px;
+}
+
+.form-block {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}

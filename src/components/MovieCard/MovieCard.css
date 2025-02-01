@@ -1,0 +1,78 @@
+.card {
+    border-radius: 12px;
+    width: 282px;
+    height: 520px;
+    background-color: #20283e;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.poster {
+    position: relative;
+    padding: 8px;
+}
+
+.poster-image {
+    width: 266px;
+    height: 400px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.rating {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    border-radius: 8px;
+    padding: 4px 8px;
+    width: 65px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #ffad49;
+    background-color: #20283e;
+}
+
+.rating-icon {
+    margin-right: 4px;
+}
+
+.details {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Расстояние между элементами */
+    height: 80px;
+}
+
+.movie-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #ebeef5;
+}
+
+.favorite {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Расстояние между значком и текстом */
+}
+
+.favorite-icon {
+    font-size: 18px;
+    color: #007bff; /* Синий цвет */
+}
+
+.favorite-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #7b6ef6;
+}

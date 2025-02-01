@@ -1,0 +1,21 @@
+.form-auth {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+.button-auth {
+    width: 201px;
+    height: 56px;
+}
+
+.input-auth {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    border: 1px solid #323b54;
+    border-radius: 12px;
+    width: 384px;
+    height: 64px;
+    background: #121829;
+    color: #8e95a9;
+}
