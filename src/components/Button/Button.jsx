@@ -1,4 +1,4 @@
-import "./Button.css";
+import styles from "./Button.module.css";
 
 function Button({ text, onClick, width }) {
     const buttonStyle = {
@@ -6,7 +6,11 @@ function Button({ text, onClick, width }) {
     };
 
     return (
-        <button className="button-style" style={buttonStyle} onClick={onClick}>
+        <button
+            className={styles["button-style"]}
+            style={buttonStyle}
+            onClick={onClick}
+        >
             {text}
         </button>
     );

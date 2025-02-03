@@ -1,4 +1,4 @@
-import "./AuthForm.css";
+import styles from "./AuthForm.module.css";
 import { useState } from "react";
 import Button from "../Button/Button";
 import InputWithLogo from "../InputWithLogo/InputWithLogo";
@@ -16,7 +16,7 @@ function AuthForm() {
         console.log(formProps);
     };
     return (
-        <form className="form-auth" onSubmit={HandleSubmit}>
+        <form className={styles["form-auth"]} onSubmit={HandleSubmit}>
             <InputWithLogo
                 type={"search"}
                 value={data}
@@ -26,7 +26,7 @@ function AuthForm() {
                 name="username"
             />
             <Button
-                className="button-auth"
+                className={styles["button-auth"]}
                 text={"Войти в профиль"}
                 type="submit"
                 width="201px"

@@ -1,6 +1,5 @@
 import Button from "../Button/Button";
-// import Input from "../Input/Input";
-import "./FormInput.css";
+import styles from "./FormInput.module.css";
 import { useState } from "react";
 import InputWithLogo from "../InputWithLogo/InputWithLogo";
 
@@ -19,8 +18,8 @@ function FormInput() {
     };
 
     return (
-        <form className="form-input" onSubmit={handleSubmit}>
-            <div className="form-block">
+        <form className={styles["form-input"]} onSubmit={handleSubmit}>
+            <div className={styles["form-block"]}>
                 <InputWithLogo
                     showLogo={true}
                     type={"search"}
