@@ -1,31 +1,21 @@
-import "./ListNavbar.css";
+import styles from "./ListNavbar.module.css";
+import classNames from "classnames";
 
 function ListNavbar() {
-    // return (
-    // <ul className="navbar">
-    //     <li>
-    //         <a href="#">Поиск фильмов</a>
-    //     </li>
-    //     <li>
-    //         <a href="#">Мои фильмы</a>
-    //     </li>
-    //     <li>
-    //         <a href="#">Войти</a>
-    //     </li>
-    // </ul>
-    // );
-
     return (
-        <div className="navbar">
-            <div className="nav-item">
+        <div className={styles["navbar"]}>
+            <div className={styles["nav-item"]}>
                 <a href="#">Поиск фильмов</a>
             </div>
-            <div className="nav-item">
+            <div className={styles["nav-item"]}>
                 <a href="#">Мои фильмы</a>
             </div>
-            <div className="nav-item enter">
+            <div className={classNames(styles["nav-item"], styles["enter"])}>
                 <a href="#">Войти</a>
-                <img src="/public/Broken/Arrows Action/Login 3.svg" alt="" />
+                <img
+                    src="/public/Broken/Arrows Action/Login 3.svg"
+                    alt="логотип значка войти"
+                />
             </div>
         </div>
     );

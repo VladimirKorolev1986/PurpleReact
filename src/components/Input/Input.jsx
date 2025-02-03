@@ -1,9 +1,9 @@
-import "./Input.css";
+import styles from "./Input.module.css";
 
 const Input = (props) => {
     return (
         <input
-            className="input-class"
+            className={styles["input-class"]}
             type={props.type}
             value={props.value}
             onChange={props.onChange}

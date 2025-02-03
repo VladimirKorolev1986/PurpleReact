@@ -1,19 +1,25 @@
-import "./MovieCard.css";
+import styles from "./MovieCard.module.css";
 
 function MovieCard({ card }) {
     return (
-        <div className="card">
-            <div className="poster">
-                <img className="poster-image" src={card.img} alt="Постер" />
-                <div className="rating">
-                    <span className="rating-icon">⭐</span>
-                    <span className="rating-value">{card.rating}</span>
+        <div className={styles["card"]}>
+            <div className={styles["poster"]}>
+                <img
+                    className={styles["poster-image"]}
+                    src={card.img}
+                    alt="Постер"
+                />
+                <div className={styles["rating"]}>
+                    <span className={styles["rating-icon"]}>⭐</span>
+                    <span className={styles["rating-value"]}>
+                        {card.rating}
+                    </span>
                 </div>
             </div>
-            <div className="details">
-                <div className="movie-title">{card.title}</div>
-                <div className="favorite">
-                    <span className="favorite-icon">
+            <div className={styles["details"]}>
+                <div className={styles["movie-title"]}>{card.title}</div>
+                <div className={styles["favorite"]}>
+                    <span className={styles["favorite-icon"]}>
                         <svg
                             width="24"
                             height="24"
@@ -36,7 +42,7 @@ function MovieCard({ card }) {
                             />
                         </svg>
                     </span>
-                    <span className="favorite-text">В избранное</span>
+                    <span className={styles["favorite-text"]}>В избранное</span>
                 </div>
             </div>
         </div>
